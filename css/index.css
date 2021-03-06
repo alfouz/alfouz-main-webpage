@@ -1,0 +1,201 @@
+/* -------------------FONTS ------------------------- */
+@font-face {
+  font-family: Roboto;
+  src: url("../utils/fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../utils/fonts/Roboto/Roboto-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../utils/fonts/Roboto/Roboto-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../utils/fonts/Roboto/Roboto-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../utils/fonts/Roboto/Roboto-Thin.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../utils/fonts/Roboto/Roboto-ThinItalic.ttf");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../utils/fonts/Roboto/Roboto-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../utils/fonts/Roboto/Roboto-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../utils/fonts/Roboto/Roboto-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../utils/fonts/Roboto/Roboto-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../utils/fonts/Roboto/Roboto-Black.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../utils/fonts/Roboto/Roboto-BlackItalic.ttf");
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* -------------------------------------------------- */
+
+/* -------------------- GENERAL --------------------- */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-color: #edf5fc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: Roboto;
+}
+
+.dark-mode {
+  color: #ffffff;
+}
+.light-mode {
+  color: #333333;
+}
+
+/* -------------------------------------------------- */
+
+.main-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: #e7f0f7;
+}
+
+.main-header-container {
+  background-image: url("../images/image-logo.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 80%;
+}
+
+.main-header-info-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.main-header-image {
+  height: 148px;
+  width: 148px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.main-header-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-body-container {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 64px;
+  justify-content: center;
+}
+
+.project-card {
+  width: 400px;
+  height: 300px;
+  background: #333;
+  margin: 20px;
+  color: white;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  margin: 17px;
+  border: 3px solid #ccc;
+  background: #444;
+}
+
+@media (max-width: 850px) {
+  .main-body-container {
+    flex-direction: column;
+    padding: 24px;
+  }
+  .project-card {
+    width: auto;
+    height: auto;
+    margin: 20px;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12;
+  }
+
+  .project-card:hover {
+    margin: 17px;
+    border: 3px solid #ccc;
+    background: #444;
+  }
+}
